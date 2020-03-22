@@ -1,0 +1,82 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- 注册servlet -->
+  <servlet>
+    <servlet-name>hello</servlet-name>
+    <servlet-class>com.wen233.servlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>servlet0</servlet-name>
+    <servlet-class>com.wen233.servlet.ServletLifecycle</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>hello1</servlet-name>
+    <servlet-class>com.wen233.servlet.Hello1Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>down</servlet-name>
+    <servlet-class>com.wen233.servlet.DownServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>random</servlet-name>
+    <servlet-class>com.wen233.servlet.RandomNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>randomImage</servlet-name>
+    <servlet-class>com.wen233.servlet.RandomImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>requestInfo</servlet-name>
+    <servlet-class>com.wen233.servlet.RequestInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>cookie</servlet-name>
+    <servlet-class>com.wen233.servlet.CookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>session</servlet-name>
+    <servlet-class>com.wen233.servlet.SessionServlet</servlet-class>
+  </servlet>
+
+  <!-- servlet的请求路径 -->
+  <servlet-mapping>
+    <servlet-name>hello</servlet-name>
+    <url-pattern>/hello/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet0</servlet-name>
+    <url-pattern>/servlet0</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>hello1</servlet-name>
+    <url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>down</servlet-name>
+    <url-pattern>/down</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>random</servlet-name>
+    <url-pattern>/random</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>randomImage</servlet-name>
+    <url-pattern>/randomImage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>requestInfo</servlet-name>
+    <url-pattern>/info</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>cookie</servlet-name>
+    <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>session</servlet-name>
+    <url-pattern>/session</url-pattern>
+  </servlet-mapping>
+</web-app>
